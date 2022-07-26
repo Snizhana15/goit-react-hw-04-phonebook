@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+.label {
+  margin-right: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.input {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 15px;
+  border: 1px solid #ff8c00;
+  margin-right: 10px;
+}
+.button {
+  text-align: center;
+  height: 37px;
+  border: 1px solid #ff8c00;
+  border-radius: 5px;
+  box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
