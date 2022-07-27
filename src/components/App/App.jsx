@@ -4,6 +4,7 @@ import Filter from '../Filter/Filter';
 import ContactList from '../ContactList/ContactList';
 import { nanoid } from 'nanoid';
 import css from './App.module.css';
+
 class App extends Component {
   state = {
     contacts: [

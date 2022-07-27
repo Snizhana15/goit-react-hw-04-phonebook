@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import css from './ContactForm.module.css';
+
 class ContactForm extends Component {
   state = {
     name: '',
@@ -14,8 +15,9 @@ class ContactForm extends Component {
   };
 
   handelSubmit = e => {
+    const { name, number } = this.state;
     e.preventDefault();
-    this.props.onSubmit(this.state.name, this.state.number);
+    this.props.onSubmit(name, number);
     this.reset();
   };
 

@@ -1,0 +1,18 @@
+.item {
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+}
+.item:not(last-child) {
+  margin-bottom: 5px;
+}
+.button {
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  height: 30px;
+  border: 1px solid #ff8c00;
+  border-radius: 5px;
+}
