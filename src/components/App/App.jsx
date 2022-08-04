@@ -10,7 +10,7 @@ class App extends Component {
     contacts: [],
     filter: '',
   };
-  componentDidUpdate(prevState) {
+  componentDidUpdate(prevProps, prevState) {
     const { contacts } = this.state;
     if (contacts !== prevState.contacts) {
       localStorage.setItem('contacts', JSON.stringify(contacts));

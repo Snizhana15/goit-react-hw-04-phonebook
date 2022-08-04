@@ -16,4 +16,5 @@ const ContactListItem = ({ id, name, number, onDeleteContact }) => {
     </li>
   );
 };
+
 export default ContactListItem;
