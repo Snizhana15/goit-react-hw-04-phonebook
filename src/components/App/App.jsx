@@ -1,23 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import useLocalStorage from 'hooks/useLocalStorage';
 import ContactForm from '../ContactForm/ContactForm';
 import Filter from '../Filter/Filter';
 import ContactList from '../ContactList/ContactList';
 import { nanoid } from 'nanoid';
 import css from './App.module.css';
 
-const useLocalStorage = () => {
-  const [state, setState] = useState(() => {
-    return JSON.parse(localStorage.getItem('contacts') ?? []);
-  });
-  useEffect(() => {
-    localStorage.setItem('contacts', JSON.stringify(state));
-  }, [state]);
-
-  return [state, setState];
-};
-
 const App = () => {
-  const [contacts, setContacts] = useLocalStorage();
+  const [contacts, setContacts] = useLocalStorage('contacts');
   const [filter, setFilter] = useState('');
   const addContact = (name, number) => {
     const contact = {
